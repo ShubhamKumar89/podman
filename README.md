@@ -10,23 +10,23 @@
  
  ## Procedure
  
- ### Source OS Release
+ ### 1. Source OS Release
 ```bash
 source /etc/os-release
 ```
-### Add Repository
+### 2. Add Repository
 
 ```bash
 echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /" | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
 ```
 
-###  Add GPG Key
+###  3. Add GPG Key
 
 ```bash
 curl -L https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/Release.key | sudo apt-key add -
 ```
 
-### Install Podman
+### 4. Install Podman
 
 ```bash
 sudo apt-get update
